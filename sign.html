@@ -1,0 +1,71 @@
+<html lang="en">
+    <head>
+        <title>Alfred</title>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1"/>
+      <style type="text/css">
+        div{
+          border: 10px solid green;
+          margin: auto;
+          padding: 15px;
+          width: fit-content;
+          height: auto;
+          background-color: rgb(71, 197, 55);
+        }
+        #alfred{
+          background-color: aquamarine;
+          margin-left: 20px;
+          margin-top: 10px;
+          width: 100px;
+          text-align: center;
+        }
+        h1{
+          color: indianred;
+          text-align: center;
+        }
+        #peres{
+          float: right;
+          top: 10px;
+          font-size: 40px;
+        }
+        a{
+          text-decoration: none;
+        }
+      </style>
+    </head>
+       <body>
+         <div>
+          <nav id="peres"><a href="index.html">x</a></nav>
+           <h1>SIGN UP</h1>
+       <h2>Please fill in your correct details in the form below to create and account.</h2>
+       <form action="#" method="post">
+       <label for="fname"><b>First name</b><span style="color: red;">*</span></label><br/>
+       <input type="text" placeholder="Enter your first name" name="fname" required><br/>
+       <label for="sname"><b>Second name</b></label><br/>
+       <input type="text" placeholder="Enter your second name" name="sname"><br/>
+       <label for="lname"><b>Username name</b></label><span style="color: red;">*</span><br/>
+       <input type="text" placeholder="Enter your surname" name="lname" required><br/> 
+       <label for="email"><b>Email</b></label><span style="color: red;">*</span><br/>
+       <input type="email" placeholder="Your email" name="email" required><br/> 
+       <label for="pnumber"><b>Phone number</b></label><br/>
+       <input type="text" placeholder="Enter your telephone number" name="pnumber" maxlength="10" ><br/> 
+       <label for="nat"><b>Nationality</b></label><span style="color: red;">*</span><br/>
+       <input type="text" placeholder="Country of birth" name="nat" required><br/> 
+       <label for="date"><b>Date of birth</b></label><br/>
+       <input type="date" placeholder="" name="date"><br/> 
+       <label for="password"><b>Create Password</b></label><span style="color: red;">*</span><br/>
+       <input type="password" placeholder="Create a strong password" name="password" required ; minlength="6"><br/> 
+       <label for="password"><b>Confirm Password</b></label><br/>
+       <input type="password" placeholder="Confirm" name="password" required ; minlength="6"><br/>
+       <label for="remember">
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+      
+      <p>By creating an account you agree to our <a href="#" style="color:rgb(219, 86, 86)">Terms & Privacy</a>.</p>
+  
+       <button type="submit" id="alfred">SIGN UP</button>
+       </form>
+         </div>
+    </body>
+</html>
