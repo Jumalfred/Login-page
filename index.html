@@ -6,12 +6,17 @@
         <meta name="viewpoint" content="width=device-width, initial-scale=1"/>
         <title>Home</title>
         <style type="text/css">
+          body{
+          font-family: Arial, Helvetica, sans-serif;
+        }  
          .alfred{
              border: 5px solid rgb(47, 47, 133);
              margin: auto;
              width: fit-content;
              padding: 15px;
              background-color: ivory;
+             min-height:100%;
+             border-radius: 20px;
          }
          .container{
        position: relative;
@@ -21,7 +26,7 @@
        padding: 10px;
        border-radius: 60px;
        overflow: hidden;
-       margin: 80px;
+       margin: auto;
    }
    .box1{
        float: right;
@@ -56,22 +61,37 @@
    a{
        text-decoration: none;
    }
+   p{
+       font-size: 25px;
+       margin-bottom: 100px;
+   }
+   h1{
+       text-align: center;
+   }
    footer{
        background-color: burlywood;
        text-align: center;
        padding: 10px;
+       margin-top: 100px;
+   }
+   #dog{
+       font-weight: bolder;
+       font-size: larger;
    }  
         </style>
     </head>
     <body>
         <div class="alfred">
         <h1>WELCOME TO MY PAGE</h1><br/>
-        <p>If you already have an account please <b>Sign In</b> else <b>Sign Up</b></p>
+        <label id="dog"></label><br>
+        <p>Login for more information and activities in this site</p> 
         <div class="container">
             <div class="box1"><a href="sign.html">SIGN UP</a></div>
             <div class="box2"><a href="login.html">SIGN IN</a></div>
           </div>
           <footer>Designed by Jumalfred</footer>
-          </div>    
+          </div>
+
+          <script src="index.js"> </script>    
     </body>
 </html>
