@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1"/>
+        <title>Home</title>
+        <style type="text/css">
+          body{
+          font-family: Arial, Helvetica, sans-serif;
+        }  
+         .alfred{
+             border: 5px solid rgb(47, 47, 133);
+             margin: auto;
+             width: fit-content;
+             padding-top: 10px;
+             padding-left: 10px;
+             padding-right: 10px;
+             background-color: ivory;
+             min-height:100%;
+             border-radius: 20px;
+         }
+         .container{
+       position: relative;
+       background-color: aqua;
+       width: 140px;
+       height: 23px;
+       padding: 10px;
+       border-radius: 60px;
+       overflow: hidden;
+       margin: auto;
+   }
+   .box1{
+       float: right;
+       height: 20px;
+   }
+   .box2{
+       height: 20px;
+       float: left;
+   }
+   .box1:hover{
+       padding-top: 1px;
+       padding-bottom: 5px;
+       padding-right: 25px;
+       padding-left: 30px;
+       height: 30px;
+       font-size: larger;
+       position: absolute;
+       background-color: aqua;
+       font-weight: bold;
+   }
+   .box2:hover{
+       padding-top: 1px;
+       padding-bottom: 5px;
+       padding-right: 25px;
+       padding-left: 30px;
+       font-size: larger;
+       position: absolute;
+       background-color: aqua;
+       width: 100px;
+       font-weight: bold;
+   } 
+   a{
+       text-decoration: none;
+   }
+   p{
+       font-size: 25px;
+       margin-bottom: 100px;
+   }
+   footer{
+       background-color: burlywood;
+       text-align: center;
+       padding: 10px;
+       margin-top: 100px;
+       border-radius: 20px;
+   }
+   #dog{
+       font-weight: bolder;
+       font-size: larger;
+   }  
+   #muendo{
+          position: fixed;
+          max-width:fit-content;
+          min-height:fit-content;
+          margin: auto;
+          background-color: rgb(134, 201, 79);
+          background-color:rgb(134, 201, 79) ;
+          padding: 50px;
+          border-radius: 15px;
+          display: none;
+          z-index: 1;
+          overflow: auto;
+        }
+        #mra{
+          margin: auto;
+          background-color:rgb(134, 201, 79) ;
+          padding: 10px;
+        }
+        #oginga{
+          padding: 35px;
+        }
+        input{
+        padding: 10px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+        }
+        input[type=text]{
+          text-transform: capitalize; 
+        }
+        button{
+          background-color: rgb(56, 170, 132);
+          color:beige ;
+          height:50px;
+          margin-left: 20px;
+          margin-top: 10px;
+          width: 200px;
+          text-align: center;
+          padding: 4px;
+          font-size: larger;
+        }
+        button:hover{
+          opacity: 0.8;
+          font-weight: bolder;
+        }
+        #fred{
+          padding: 8px;
+          color: cornsilk;
+        }
+        #fred:hover{
+          background-color: seagreen;
+          height: fit-content;
+        }
+        #peres{
+          float: right;
+          top: 10px;
+          font-size: 40px;
+        }
+        #ajuma{
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          color: floralwhite;
+          margin: auto;
+          text-align: center;
+          font-weight: bold;
+        }
+        img{
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+        }
+        a{
+          text-decoration: none;
+        }
+        .animate{
+            -webkit-animation: animatezoom 0.6s;
+            animation: animatezoom 0.6s;
+        }
+        @-webkit-keyframes animatezoom{
+           from{-webkit-transform:scale(0) ;}
+           to{-webkit-transform: scale(1);}
+        }
+        @keyframes animatezoom{
+            from{transform: scale(0);}
+            to{ transform: scale(1);}
+        }
+        </style>
+    </head>
+    <body>
+        <div class="alfred">
+        <marquee behavior="" direction=""><h1>WELCOME TO MY PAGE</h1></marquee><br/>
+        <label id="dog"></label><br>
+        <p>Login for more information and activities in this site</p> 
+        <div class="container">
+            <div class="box1"><a href="sign.html">SIGN UP</a></div>
+            <div class="box2"><a href="login.html">SIGN IN</a></div>
+          </div>
+          <footer>Designed by Jumalfred</footer>
+          <script src="index.js"> </script>    
+    </body>
+</html>

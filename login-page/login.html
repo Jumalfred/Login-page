@@ -1,0 +1,111 @@
+<html lang="en">
+    <head>
+        <title>Alfred</title>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1"/>
+      <style type="text/css">
+          body{
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        #muendo{
+          position: relative;
+          max-width:fit-content;
+          min-height:fit-content;
+          margin: auto;
+          background-color: rgb(134, 201, 79);
+          padding: 50px;
+          border-radius: 15px;
+        }
+        #mra{
+          margin: auto;
+          background-color:rgb(134, 201, 79) ;
+          padding: 10px;
+        }
+        #oginga{
+          padding: 35px;
+        }
+        input{
+        padding: 10px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+        }
+        input[type=text]{
+          text-transform: capitalize; 
+        }
+        button{
+          background-color: rgb(56, 170, 132);
+          color:beige ;
+          height:50px;
+          margin-left: 20px;
+          margin-top: 10px;
+          width: 200px;
+          text-align: center;
+          padding: 4px;
+          font-size: larger;
+        }
+        button:hover{
+          opacity: 0.8;
+          font-weight: bolder;
+        }
+        #fred{
+          padding: 8px;
+          color: cornsilk;
+        }
+        #fred:hover{
+          background-color: seagreen;
+          height: fit-content;
+        }
+        #peres{
+          float: right;
+          top: 10px;
+          font-size: 40px;
+        }
+        #ajuma{
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          color: floralwhite;
+          margin: auto;
+          text-align: center;
+          font-weight: bold;
+        }
+        img{
+          width: 150px !important;
+          height: 150px;
+          border-radius: 50%;
+        }
+        a{
+          text-decoration: none;
+        }
+      </style>
+    </head> 
+    <body>
+     <div id="muendo">
+      <nav id="peres"><a href="index.html">x</a></nav>
+      <div id="ajuma"><img src="user.jpg" alt="User">User</div> <br/>
+        <form action="#" method="post">
+          <p><strong>Fill in the spaces below to log in</strong></p>
+          <label for="username"><b>Username</label></b><br>
+          <input type="text" placeholder="Enter your username" name="username" required /><br>
+          <label for="password"><b>Password</label></b><br>
+          <input type="password" placeholder="Enter password" name="password" required; minlength="6"/><br>
+          <input type="checkbox" checked="checked" name="remember" /><label>Remember me</label><br>
+          <button type="submit">Login</button>
+        </form><br> 
+          <footer >
+            <a href="#" id="fred">Forgot Password?</a><br/>
+          </footer>
+          <br>
+          <br>
+          <div id="mra"></div>
+            <script>
+              var d = new Date();
+              document.getElementById("mra").innerHTML=d;
+            </script>
+     </div>
+     </div>
+    </body>
+</html>
