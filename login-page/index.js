@@ -7,6 +7,7 @@ else if (time => 12 && time < 16) {
   greeting = "Good afternoon";
 
 }
+else{
   greeting = "Good evening";
 }
 document.getElementById("dog").innerHTML = greeting;
