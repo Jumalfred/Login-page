@@ -1,14 +1,15 @@
 var greeting;
 var time = new Date().getHours();
-if (time => 0 && time < 12){
+if (time < 12){
   greeting = "Good morning";
   } 
-else if (time => 12 && time < 16) {
+else if (time < 16) {
   greeting = "Good afternoon";
-
 }
-else{
-  greeting = "Good evening";
+else if(time < 19){
+  greeting = "Good evening"} 
+else if(time < 24){
+  greeting = "Good night";
 }
 document.getElementById("dog").innerHTML = greeting;
 function validateForm() {
