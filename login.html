@@ -1,6 +1,6 @@
 <html lang="en">
     <head>
-        <title>Alfred</title>
+        <title>Login</title>
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewpoint" content="width=device-width, initial-scale=1"/>
@@ -10,14 +10,15 @@
         }
         #muendo{
           position: relative;
-          max-width:fit-content;
           min-height:fit-content;
+          width: fit-content;
           margin: auto;
           background-color: rgb(134, 201, 79);
           padding: 50px;
           border-radius: 15px;
+          zoom: 100%;
         }
-        #mra{
+        #date{
           margin: auto;
           background-color:rgb(134, 201, 79) ;
           padding: 10px;
@@ -29,8 +30,9 @@
         padding: 10px;
         margin: 5px 0 22px 0;
         display: inline-block;
-        border: none;
+        border-color: rgb(56, 170, 132);
         background: #f1f1f1;
+        border-radius: 10px;
         }
         input[type=text]{
           text-transform: capitalize; 
@@ -49,6 +51,7 @@
         button:hover{
           opacity: 0.8;
           font-weight: bolder;
+          border-radius: 10px;
         }
         #fred{
           padding: 8px;
@@ -80,31 +83,40 @@
         a{
           text-decoration: none;
         }
+        @media only screen and (max-width:700px) {
+          body{
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            height: fit-content;
+          }
+        }
       </style>
     </head> 
     <body>
      <div id="muendo">
       <nav id="peres"><a href="index.html">x</a></nav>
-      <div id="ajuma"><img src="user.jpg" alt="User">User</div> <br/>
+      <div id="ajuma"><img src="user.png" alt="User">User</div> <br/>
         <form action="#" method="post">
           <p><strong>Fill in the spaces below to log in</strong></p>
           <label for="username"><b>Username</label></b><br>
-          <input type="text" placeholder="Enter your username" name="username" required /><br>
+          <input type="text" placeholder="Enter your username" name="username" id="usname" required /><br>
           <label for="password"><b>Password</label></b><br>
           <input type="password" placeholder="Enter password" name="password" required; minlength="6"/><br>
-          <input type="checkbox" checked="checked" name="remember" /><label>Remember me</label><br>
-          <button type="submit">Login</button>
+          <input type="checkbox" value="checked" name="remember" /><label>Remember me</label><br>
+          <button type="submit" onclick="displayName()">Login</button>
         </form><br> 
           <footer >
             <a href="#" id="fred">Forgot Password?</a><br/>
           </footer>
           <br>
           <br>
-          <div id="mra"></div>
-            <script>
-              var d = new Date();
-              document.getElementById("mra").innerHTML=d;
-            </script>
+          <div id="date" ></div>
+          <script>
+            var date = new Date();
+            document.getElementById("date").innerHTML=date;
+          </script>
+          <script src="index.js"></script>
      </div>
      </div>
     </body>

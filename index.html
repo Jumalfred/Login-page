@@ -19,16 +19,18 @@
              background-color: ivory;
              min-height:100%;
              border-radius: 20px;
+             zoom: 100%;
          }
          .container{
-       position: relative;
-       background-color: aqua;
+       background-color:aqua;
        width: 140px;
-       height: 23px;
+       height: 24px;
        padding: 10px;
+       position: relative;
        border-radius: 60px;
        overflow: hidden;
        margin: auto;
+       
    }
    .box1{
        float: right;
@@ -49,7 +51,7 @@
        background-color: aqua;
        font-weight: bold;
    }
-   .box2:hover{
+   .box2:hover,button:hover{
        padding-top: 1px;
        padding-bottom: 5px;
        padding-right: 25px;
@@ -60,8 +62,10 @@
        width: 100px;
        font-weight: bold;
    } 
-   a{
+   button{
        text-decoration: none;
+       background-color: aqua;
+       border: none;
    }
    p{
        font-size: 25px;
@@ -106,23 +110,11 @@
         border: none;
         background: #f1f1f1;
         }
-        input[type=text]{
-          text-transform: capitalize; 
-        }
-        button{
-          background-color: rgb(56, 170, 132);
-          color:beige ;
-          height:50px;
-          margin-left: 20px;
-          margin-top: 10px;
-          width: 200px;
-          text-align: center;
-          padding: 4px;
-          font-size: larger;
-        }
         button:hover{
           opacity: 0.8;
           font-weight: bolder;
+          width: 80px;
+          height: 30px;
         }
         #fred{
           padding: 8px;
@@ -151,20 +143,18 @@
           height: 150px;
           border-radius: 50%;
         }
-        a{
-          text-decoration: none;
-        }
-        .animate{
-            -webkit-animation: animatezoom 0.6s;
-            animation: animatezoom 0.6s;
-        }
-        @-webkit-keyframes animatezoom{
-           from{-webkit-transform:scale(0) ;}
-           to{-webkit-transform: scale(1);}
-        }
-        @keyframes animatezoom{
-            from{transform: scale(0);}
-            to{ transform: scale(1);}
+        @media screen and (max-width : 575px) {
+          .alfred{
+            height: fit-content;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            margin: 1px;
+            background-color: mistyrose;
+          }
+          .box1, .box2, .container, .box1:hover, .box2:hover,button,button:hover{
+            background-color: violet;
+          }
         }
         </style>
     </head>
@@ -172,12 +162,12 @@
         <div class="alfred">
         <marquee behavior="" direction=""><h1>WELCOME TO MY PAGE</h1></marquee><br/>
         <label id="dog"></label><br>
-        <p>Login for more information and activities in this site</p> 
+        <p>Login for more information and activities in this site.</p> 
         <div class="container">
-            <div class="box1"><a href="sign.html">SIGN UP</a></div>
-            <div class="box2"><a href="login.html">SIGN IN</a></div>
+           <div class="box1" onclick="sign()">SIGN UP</div>
+           <div class="box2" onclick="login()">SIGN IN</div>
           </div>
           <footer>Designed by Jumalfred</footer>
-          <script src="index.js"> </script>    
+          <script src="index.js"> </script>  
     </body>
 </html>

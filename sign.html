@@ -1,6 +1,6 @@
 <html lang="en">
     <head>
-        <title>Alfred</title>
+        <title>Sign Up</title>
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewpoint" content="width=device-width, initial-scale=1"/>
@@ -14,6 +14,7 @@
         display: inline-block;
         border: none;
         background: #f1f1f1;
+        border-radius: 10px;
         }
         input[type=text]{
           text-transform: capitalize; 
@@ -22,11 +23,12 @@
           border: 10px solid green;
           margin: auto;
           padding: 15px;
-          max-width: 100%;
-          min-height:100%;
+          width: fit-content;
+          min-height:fit-content;
           background-color: rgb(71, 197, 55);
           font-size: larger;
           border-radius: 19px;
+          zoom: 100%;
         }
         #alfred{
           background-color: aquamarine;
@@ -36,10 +38,12 @@
           text-align: center;
           height: 50px;
           font-size: larger;
+          border: 1px solid blue;
         }
         #alfred:hover{
           opacity: 0.8;
           font-weight: bolder;
+          border-radius: 10px;
         }
         h1{
           color: indianred;
@@ -49,6 +53,13 @@
           float: right;
           top: 10px;
           font-size: 40px;
+          padding: 3px;
+          height: fit-content;
+        }
+        #peres:hover{
+          color: blue;
+          background-color: blanchedalmond;
+          border-radius: 50%;
         }
         a{
           text-decoration: none;
@@ -57,16 +68,24 @@
           color: red;
           width: 500px;
         }
+        @media only screen and (max-width:700px) {
+          body{
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            height: fit-content;
+          }
+        }
       </style>
       </head>
        <body>
          <div id="oginga">
           <nav id="peres"><a href="index.html">x</a></nav>
            <h1>SIGN UP</h1>
-       <h2>Please fill in your correct details in the form below to create an account.</h2>
+       <h2>Please fill in your correct details.</h2>
        <form name="myForm" action="#" method="post" onsubmit="return validateForm()">
        <label for="fname"><b>First name</b><span style="color: red;">*</span></label><br/>
-       <input type="text" placeholder="Enter your first name" name="fname" required><br/>
+       <input type="text" placeholder="Enter your first name" name="fname" id="fname" required><br/>
        <label for="sname"><b>Second name</b></label><br/>
        <input type="text" placeholder="Enter your second name" name="sname"><br/>
        <label for="lname"><b>Username name</b></label><span style="color: red;">*</span><br/>
@@ -85,12 +104,12 @@
        <label for="password"><b>Confirm Password</b></label><br/>
        <input type="password" placeholder="Confirm" name="pasword" required ; minlength="6"><br/>
        <label for="remember">
-        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        <input type="checkbox" value="checked" name="remember" style="margin-bottom:15px"> Remember me
       </label>
       
       <p>By creating an account you agree to our <a href="#" style="color:rgb(219, 86, 86)">Terms & conditions</a>.</p>
   
-       <button type="submit" id="alfred" onclick = "ageCalculator()">SIGN UP</button>
+       <button type="submit" id="alfred" onclick="return myFunction()">SIGN UP</button>
        </form>
          </div>
          <script src="index.js"></script>
